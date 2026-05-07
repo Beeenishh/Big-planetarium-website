@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big planetarium</title>
+    <link rel="stylesheet" href="planetarium.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline class="background-video">
+  <source src="stars bg.mp4" type="video/mp4">
+</video>
+<header class="navbar">
+  <h1 class="logo">BIG PLANETARIUM</h1>
+
+  <div class="buttons">
+    <button class="btn">Login</button>
+    <button class="btn">Settings</button>
+    <button class="btn" onclick="goAbout()">About</button>
+  </div>
+</header>
+ <div class="main-content">
+    <h2>Journey Through the Milky Way </h2>
+    <p> THE MILKY WAY IS THE GALAXY WE LIVE IN. IT CONTAINS BILLIONS OF STARS, PLANETS, AND COSMIC DUST. FROM EARTH, IT APPEARS AS A GLOWING BAND ACROSS THE NIGHT SKY, BUT IT IS ACTUALLY A VAST SPIRAL GALAXY FULL OF MYSETERIES WAITING TO BE EXPLORED </p>
+
+    <button class="explorebtn" onclick="planetscroll()">
+      Start Exploring
+    </button>
+    
+    <button class="explorebtn" onclick="goToVisit()">
+  Plan a Visit
+</button>
+
+  </div>
+
+
+  <section id="planet-cards">
+  <h2>Explore the Planets</h2>
+  <p class="section-intro">Click on a planet card to begin your space journey.</p>
+
+  <div class="cardsbox">
+
+    <div class="planet-card">
+      <img src="mercury.png" alt="Mercury, the smallest planet in the solar system">
+      <h3>Mercury</h3>
+      <p>The smallest planet and the closest planet to the Sun.</p>
+      <a href="mercury.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="venus.png" alt="Venus, a bright yellow planet covered with thick clouds">
+      <h3>Venus</h3>
+      <p>A very hot planet with thick clouds and a bright appearance.</p>
+      <a href="venus.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="earth.png" alt="Earth, a blue and green planet with oceans and land">
+      <h3>Earth</h3>
+      <p>Our home planet and the only known planet with life.</p>
+      <a href="earth.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="mars.png" alt="Mars, a red rocky planet">
+      <h3>Mars</h3>
+      <p>Known as the Red Planet because of its rusty red surface.</p>
+      <a href="mars.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="saturn.png" alt="Mercury, the smallest planet in the solar system">
+      <h3>Saturn</h3>
+      <p>Saturn is a gas giant mostllymade up of hydrogen and helium. Famous for its beautiful ring. </p>
+      <a href="saturn.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="uranus.png" alt="Venus, a bright yellow planet covered with thick clouds">
+      <h3>Uranus</h3>
+      <p>An icy planet that rotates on its side, giving it a unique tilt compared to other planets.</p>
+      <a href="uranus.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="jupiter.png" alt="Earth, a blue and green planet with oceans and land">
+      <h3>Jupiter</h3>
+      <p>The largest planet in the solar system, known for its massive size and the Great Red Spot storm.</p>
+      <a href="jupiter.html" class="card-btn">Learn More</a>
+    </div>
+
+    <div class="planet-card">
+      <img src="neptune.png" alt="Mars, a red rocky planet">
+      <h3>Neptune</h3>
+      <p>A deep blue planet known for its strong winds and being the farthest planet from the Sun.</p>
+      <a href="neptune.html" class="card-btn">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+  <script> 
+    function planetscroll() {
+  const section = document.getElementById("planet-cards");
+
+  section.scrollIntoView({
+    behavior: "smooth"
+  });
+}
+function goToVisit() {
+  window.location.href = "form.html";
+}
+function goAbout() {
+  window.location.href = "about.html";
+}
+  </script>
+
+</body>
+</html>

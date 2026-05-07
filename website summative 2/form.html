@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user form</title>
+         <link rel="stylesheet" href="planetarium.css">
+
+</head>
+<body>
+    <video autoplay muted loop playsinline class="background-video">
+  <source src="stars bg.mp4" type="video/mp4">
+</video>
+
+    <div class="form-section">
+  <h2>Plan Your Visit</h2>
+
+  <form onsubmit="submitForm(event)">
+    
+    <label>Name:</label>
+    <input type="text" required>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <label>Visit Type:</label>
+    <select>
+      <option>School Visit</option>
+      <option>Family Visit</option>
+      <option>Group Visit</option>
+    </select>
+
+    <label>Preferred Date:</label>
+    <input type="date">
+
+    <label>Message:</label>
+    <textarea rows="4"></textarea>
+
+    <button type="submit" class="explorebtn">Submit</button>
+
+  </form>
+</div>
+
+<script> function submitForm(event) {
+  alert("Your visit request has been submitted!");
+}</script>
+
+</body>
+</html>

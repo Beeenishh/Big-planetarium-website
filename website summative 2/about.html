@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Big Planetarium</title>
+  <link rel="stylesheet" href="planetarium.css">
+</head>
+
+<body>
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="stars bg.mp4" type="video/mp4">
+  </video>
+
+  <header class="navbar">
+    <h1 class="logo">BIG PLANETARIUM</h1>
+
+    <div class="buttons">
+      <button class="btn" onclick="goHome()">Home</button>
+      <button class="btn" onclick="goVisit()">Plan a Visit</button>
+    </div>
+  </header>
+
+  <section class="aboutpage">
+    <h1>About Big Planetarium</h1>
+
+    <p>
+      Big Planetarium is an educational space website created to help users explore the Milky Way
+      in a fun, simple, and accessible way. The website introduces visitors to planets, space facts,
+      and the beauty of our galaxy through clear information, images, and interactive features.
+    </p>
+
+    <p>
+      The aim of Big Planetarium is to make space learning feel exciting instead of difficult.
+      Whether the visitor is a student, a family member, or simply curious about astronomy,
+      the website is designed to be easy to understand and enjoyable to use.
+    </p>
+
+    <button class="explorebtn" onclick="goHome()">Back to Home</button>
+  </section>
+
+  <script>
+    function goHome() {
+      window.location.href = "big planetarium.html";
+    }
+
+    function goVisit() {
+      window.location.href = "form.html";
+    }
+    
+  </script>
+</body>
+</html>

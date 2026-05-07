@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars: The red planet</title>
+      <link rel="stylesheet" href="planetarium.css">
+</head>
+<body>
+      <video autoplay muted loop playsinline class="background-video">
+  <source src="stars bg.mp4" type="video/mp4">
+</video>
+  <header class="navbar">
+    <h1 class="logo">BIG PLANETARIUM</h1>
+    <div class="buttons">
+      <button class="btn">Login</button>
+      <button class="btn">Settings</button>
+      <button class="btn" onclick="goAbout()">About</button>
+
+    </div>
+  </header>
+  <div class="planet-page">
+    <h1>MARS</h1>
+    <img src="mars.png" alt="Mars pic" class="planet-image">
+    <p>
+      Mars is known as the Red Planet due to its reddish appearance caused by iron oxide on its surface. It is the fourth planet from the Sun and has been a major focus of space exploration.</p>
+
+    <div class="facts">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Distance from Sun: 228 million km</li>
+        <li>Day length: 24.6 hours</li>
+        <li>Moons: 2 (Phobos and Deimos)</li>
+      </ul>
+    </div>
+
+    <button onclick="showFact()" class="explorebtn">
+      Show Fun Fact
+    </button>
+
+    <p id="fact"></p>
+
+    <a href="big planetarium.html" class="card-btn">Back to Home</a>
+
+  </div>
+
+  <script>
+    function showFact() {
+      document.getElementById("fact").textContent =
+        "Mars has the largest volcano in the solar system, called Olympus Mons!";
+    }
+    
+    function goAbout() {
+        window.location.href = "about.html";
+}
+  </script>
+
+</body>
+</html>
+</body>
+</html>

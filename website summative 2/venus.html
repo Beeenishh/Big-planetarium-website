@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+     <link rel="stylesheet" href="planetarium.css">
+
+</head>
+<body>
+     <video autoplay muted loop playsinline class="background-video">
+  <source src="stars bg.mp4" type="video/mp4">
+</video>
+  <header class="navbar">
+    <h1 class="logo">BIG PLANETARIUM</h1>
+    <div class="buttons">
+      <button class="btn">Login</button>
+      <button class="btn">Settings</button>
+      <button class="btn" onclick="goAbout()">About</button>
+
+    </div>
+  </header>
+  <div class="planet-page">
+
+    <h1>VENUS</h1>
+
+    <img src="venus.png" alt="Venus pic" class="planet-image">
+
+    <p> Venus is the second planet from the Sun and is often called Earth's sister planet because of its similar size. It has a very thick atmosphere that traps heat, making it the hottest planet in the solar system. Venus appears very bright in the sky and has been widely studied by scientists.    </p>
+    <div class="facts">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>Venus is the hottest planet in the solar system</li>
+        <li>Venus spins backwards compared to most planets</li>
+        <li>It is the brightest planet visible from Earth</li>
+      </ul>
+    </div>
+
+    <button onclick="showFact()" class="explorebtn">
+      Show Fun Fact
+    </button>
+
+    <p id="fact"></p>
+
+    <a href="big planetarium.html" class="card-btn">Back to Home</a>
+
+  </div>
+
+  <script>
+    function showFact() {
+      document.getElementById("fact").textContent =
+        "The clouds of Venus are made of sulfuric acid";
+    }
+    function goAbout() {
+  window.location.href = "about.html";
+}
+  </script>
+
+</body>
+</html>
+</body>
+</html>
